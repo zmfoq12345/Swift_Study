@@ -35,8 +35,8 @@ struct SplashView: View {
     }
     
     func anmateSplash(){
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            withAnimation(Animation.easeOut(duration: 1)){
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            withAnimation(Animation.easeOut(duration: 0.4)){
                 endSplash.toggle()
             }
         }
